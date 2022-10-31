@@ -5,10 +5,14 @@ from typing import List
 
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        
-
-
-price_array = [7,1,5,3,6,4]
-result = Solution().maxProfit(price_array)
-assert result == 5
-print("Success")
+        left = 0
+        right = 1
+        max_profit = 0
+        while right < len(prices):
+            price_diff = prices[right] - prices[left]
+            if price_diff < 0:
+                left = right
+            if price_diff > max_profit:
+                max_profit = price_diff
+            right += 1
+        return max_profit
