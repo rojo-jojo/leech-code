@@ -1,0 +1,22 @@
+{ 
+    "id":12345,
+    "subDictKey": {
+        "subListKey": [{
+            "key1" : "val",
+            "key2" : "val2",
+            "key3" : 0
+        }]
+    },
+    "subDict2": [
+        {
+            "dictInList": "11",
+            "dictInList2": "bb",
+            "dictinList3": 99
+        },
+        {
+            "dictInList4":10
+        }
+    ]
+
+}
+
